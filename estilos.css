@@ -1,0 +1,438 @@
+
+    background-color: #f4d3c2;
+    color: #4b2e2e;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.producto .comprar-btn:hover {
+    background-color: #e6b49e;
+    cursor: pointer;
+}
+
+/* Efecto de hover en los productos */
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #f4d3c2;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4b2e2e;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4d3c2;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4b2e2e;
+    font-weight: bold;
+  }
+  
+  /* Sección de productos destacados */
+  .productos-destacados h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid de productos */
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* Dos columnas */
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo de cada producto */
+  .producto {
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .producto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .producto p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .producto .oferta {
+    display: block;
+    margin-top: 15px;
+    background-color: #ff9f00;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .producto:hover .oferta {
+    background-color: #e68900;
+  }
+  
+  /* Diseño en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .productos {
+      grid-template-columns: 1fr;  /* Una columna en pantallas pequeñas */
+    }
+  
+    .producto {
+      width: 100%;  /* Aumenta el ancho de los productos en pantallas pequeñas */
+    }
+  }
+  
+  /* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #4b2e2e;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f4d3c2;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4b2e2e;
+    font-weight: bold;
+  }
+  
+  /* Estilo para el formulario */
+  .contacto {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contacto p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos del formulario */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .campo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .campo label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .campo input,
+  .campo select,
+  .campo textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+  
+  .campo input:focus,
+  .campo select:focus,
+  .campo textarea:focus {
+    border-color: #f4a261;
+    outline: none;
+  }
+  
+  .campo textarea {
+    resize: vertical;
+  }
+  
+  .campo input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  .campo button {
+    padding: 12px;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .campo button:hover {
+    background-color: #e68900;
+  }
+  
+  .campo a {
+    color: #f4a261;
+    text-decoration: none;
+  }
+  
+  .campo a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    background-color: #f4d3c2;
+    padding: 10px;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .formulario {
+      gap: 10px;
+    }
+  
+    .campo input,
+    .campo select,
+    .campo textarea {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #4b2e2e;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #f4d3c2;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #4b2e2e;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4b2e2e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4a261;
+}
+
+/* Estilos de las secciones */
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b2e2e;
+    margin-bottom: 20px;
+}
+
+/* Sección de productos destacados */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.imagen {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.imagen h3 {
+    font-size: 1.5rem;
+    color: #4b2e2e;
+    margin-top: 15px;
+}
+
+.imagen p {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Efecto hover en productos */
+.imagen:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.imagen:hover h3 {
+    color: #f4a261;
+}
+
+/* Testimonios */
+.testimonios blockquote {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonios blockquote footer {
+    text-align: right;
+    font-size: 1rem;
+    color: #4b2e2e;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #f4d3c2;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+}

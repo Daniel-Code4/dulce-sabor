@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contacto | Dulce Sabor</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="contacto">
+          <h2>Envíanos tus comentarios</h2>
+          <p>Estamos aquí para ayudarte. Si tienes preguntas, comentarios o deseas hacer un pedido especial, no dudes en contactarnos.</p>
+          
+          <!-- Formulario de contacto -->
+          <form action="mailto:tienda@dulcesabor.com" method="post" enctype="text/plain" class="formulario">
+            <div class="campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required />
+            </div>
+
+            <div class="campo">
+              <label for="pastel">Tipo de Pastel:</label>
+              <select id="pastel" name="pastel">
+                <option value="chocolate">Pastel de Chocolate</option>
+                <option value="red_velvet">Pastel Red Velvet</option>
+                <option value="fresa">Pastel de Fresa</option>
+                <option value="vainilla">Pastel de Vainilla</option>
+                <option value="mango">Pastel de Mango</option>
+                <option value="limon">Pastel de Limón</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="comentarios">Comentarios:</label>
+              <textarea id="comentarios" name="comentarios" rows="6" placeholder="Escribe tu mensaje o comentario aquí..." required></textarea>
+            </div>
+
+            <div class="campo">
+              <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required /> Acepto los <a href="#">términos y condiciones</a>
+              </label>
+            </div>
+
+            <div class="campo">
+              <button type="submit" class="boton">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>Visítanos y endulza tu día 🍰 © 2025 Dulce Sabor</p>
+      </footer>
+    </div>
+  </body>
+</html>
